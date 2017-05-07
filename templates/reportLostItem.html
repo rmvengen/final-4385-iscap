@@ -1,0 +1,126 @@
+<!--
+<html>
+  <head  ng-app="ionicApp">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="http://code.ionicframework.com/1.0.0-beta.6/css/ionic.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0-beta.6/js/ionic.bundle.js"></script>
+    <script src ="js/alert.js"></script>
+    <head></head>
+    <body ng-controller="PlaylistsCtrl">
+-->
+<ion-view title="Report Lost Item" style="">
+  <!--<script src ="js/alert.js"></script>-->
+  <ion-content padding="true" class="has-header">
+    
+    <form class="list">
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input placeholder="" type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone Number</span>
+          <input placeholder="" type="tel">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Date</span>
+          <input placeholder="" type="date">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Time</span>
+          <input placeholder="" type="time">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Item Lost</span>
+          <input placeholder="" type="text">
+        </label>
+      </ion-list>
+      <a ui-sref="menu.confirmation" class="button button-positive  button-block">Report!</a>
+      
+      
+      <button class="button button-positive" ng-click="showAlert()">
+      Report!(Alert)
+    </button>
+    <!--  <button class="button button-primary" ng-click="showConfirm()">Confirm</button>
+      <script>
+        
+    angular.module('mySuperApp', ['ionic'])
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+
+ // Triggered on a button click, or some other target
+ $scope.showPopup = function() {
+   $scope.data = {}
+
+   
+   /*
+   myPopup.then(function(res) {
+     console.log('Tapped!', res);
+   });
+   $timeout(function() {
+      myPopup.close(); //close the popup after 3 seconds for some reason
+   }, 3000);
+  };
+  */
+   // A confirm dialog
+   $scope.showConfirm = function() {
+     var confirmPopup = $ionicPopup.confirm({
+       title: 'Report item',
+       template: 'Are you sure you want to report this item?'
+     });
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('You are sure');
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
+
+   // An alert dialog
+   $scope.showAlert = function() {
+     var alertPopup = $ionicPopup.alert({
+       title: 'COnfirmation!',
+       template: 'Report this lost item'
+     });
+     alertPopup.then(function(res) {
+       console.log('Thank you for reporting item!');
+     });
+   };
+});
+
+  //# sourceURL=pen.js
+  </script>
+  -->
+  <!--
+      <div class="backdrop visible active"></div>
+      <div class="popup-container popup-showing active" ng-class= "cssClass">
+        <div class="popup">
+          <div class="popup-head">
+            <h3 class="popup-title ng-binding" ng-bind-html = "title">Confirm</h3>
+          </div>
+          <div class="popup-body">
+            <span>
+              Do you want to confrim lost item?
+            </span>
+          </div>
+          <div class="popup-buttons" ng-show="buttons.length">
+            
+            <button class="button ng-binding button-default" ng-click="$buttonTapped(button, $event)"
+                    ng-class="button.type || 'button-default'" ng-bind-html="button.text" ng-repeat="button in buttons">
+            Cancel</button>
+            <button class="button ng-binding button-positive" ng-click ="$buttonTappef(button, $event)" 
+                    ng-class="button.type || 'button-default'" ng-bind-html="button.text" ng-repeat="button in buttons">
+            OK</button>
+          
+          </div>
+        </div>
+      </div>
+      -->
+    </form>
+  </ion-content>
+</ion-view>
+
+</body>
+</html>
